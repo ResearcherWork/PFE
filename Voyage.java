@@ -13,36 +13,37 @@ import java.util.Date;
  */
 public class Voyage {
     
-    private Stations Depart ;
-    private Stations Arrive ; 
+    private String SDepart ;
+    private String SArrive ; 
     private int TDepart ;
   
     
         public Voyage() {
     }
 
-    public Voyage(Stations Depart, Stations Arrive, int TDepart) {
-        this.Depart = Depart;
-        this.Arrive = Arrive;
+    public Voyage(String SDepart, String SArrive, int TDepart) {
+        this.SDepart = SDepart;
+        this.SArrive = SArrive;
         this.TDepart = TDepart;
-        
     }
 
-    public Stations getDepart() {
-        return Depart;
+    public String getSDepart() {
+        return SDepart;
     }
 
-    public void setDepart(Stations Depart) {
-        this.Depart = Depart;
+    public void setSDepart(String SDepart) {
+        this.SDepart = SDepart;
     }
 
-    public Stations getArrive() {
-        return Arrive;
+    public String getSArrive() {
+        return SArrive;
     }
 
-    public void setArrive(Stations Arrive) {
-        this.Arrive = Arrive;
+    public void setSArrive(String SArrive) {
+        this.SArrive = SArrive;
     }
+
+    
 
     public int getTDepart() {
         return TDepart;
@@ -52,6 +53,7 @@ public class Voyage {
         this.TDepart = TDepart;
     }
 
+   
     public int CalculTArrive(String S1 , String S2)
     {
       int TA ;
